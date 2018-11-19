@@ -1,4 +1,4 @@
-eventList = []
+path_tree = []  # 储存路径的树
 
 
 def init():
