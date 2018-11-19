@@ -28,7 +28,7 @@ def listen(info):
         on_receive_test_request(info)
 
 
-def read_into_coverage(info):
+def read_into_coverage(info):  # 将传来的覆盖率信息（xml）读为coverage
     result = 0
     return result
 

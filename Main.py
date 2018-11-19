@@ -19,10 +19,10 @@ SimulationModule.init()
 Logger.log("初始化通讯器")
 Communicator.init()
 
-a = 0b11101101
-b = 13123123123123
-print(CoverageCalculater.get_coverage_of_branch(a, 6))
-
+a = 0b1110110000
+b = 131231231231232
+print(CoverageCalculater.number_of_1(a))
+print(CoverageCalculater.get_cover_percentage(b))
 # while (system_running):
 #    Communicator.listen()
 
