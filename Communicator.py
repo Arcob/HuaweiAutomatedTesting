@@ -26,3 +26,9 @@ def listen(info):
         on_receive_coverage_information(info)
     elif info == 2:
         on_receive_test_request(info)
+
+
+def read_into_coverage(info):
+    result = 0
+    return result
+

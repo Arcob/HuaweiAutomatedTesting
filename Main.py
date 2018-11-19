@@ -19,9 +19,9 @@ SimulationModule.init()
 Logger.log("初始化通讯器")
 Communicator.init()
 
-a = 41341341414141414
+a = 0b11101101
 b = 13123123123123
-print(CoverageCalculater.get_difference(a, b))
+print(CoverageCalculater.get_coverage_of_branch(a, 6))
 
 # while (system_running):
 #    Communicator.listen()
