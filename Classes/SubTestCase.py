@@ -7,7 +7,10 @@ class SubTestCase:
     effective_mutate_time = 0
     sufficiency = 1.0
 
-    def __init__(self, test_case):
+    def __init__(self, info, result, value, test_case=None):
+        self.info = info
+        self.result = result
+        self.value = value
         self.father = test_case
 
     def update_sufficiency(self):

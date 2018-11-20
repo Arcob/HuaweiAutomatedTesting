@@ -6,6 +6,7 @@ from SimulationModulePackage import SimulationModule
 import Logger
 import Communicator
 import CoverageCalculater
+import Test
 
 system_running = True  # 系统在运行
 test_running = True  # 整体测试在运行（外层loop）

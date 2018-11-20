@@ -1,5 +1,7 @@
 from SimulationModulePackage import SortingMachine
 from SimulationModulePackage import DataModelReader
+from AlgorithmModulePackage import AlgorithmModule
+from Classes import InterfaceRange
 
 
 def init():
@@ -8,4 +10,5 @@ def init():
 
 
 def sort_and_send_span(info):
-    pass
+    AlgorithmModule.receive_range_from_simulation_module(InterfaceRange(1))
+

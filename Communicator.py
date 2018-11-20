@@ -17,7 +17,7 @@ def on_receive_coverage_information(info):
     pass
 
 
-def send_mutated_test_case(testCase):
+def send_mutated_sub_test_case(testCase):  # 发送次级测试用例后等待华为那边发回覆盖率信息
     pass
 
 
