@@ -14,10 +14,10 @@ def on_receive_test_request(info):
 
 
 def on_receive_coverage_information(info):
-    pass
+    AlgorithmModule.receive_coverage(read_into_coverage(info))
 
 
-def send_mutated_sub_test_case(testCase):  # 发送次级测试用例后等待华为那边发回覆盖率信息
+def send_mutated_sub_test_case(testCase):  # 发送次级测试用例后等待华为那边发回下一次测试请求（另一个接口）
     pass
 
 

@@ -29,7 +29,7 @@ def get_coverage_of_branch(coverage, index):  # 判断第index个branch是否被
     return result
 
 
-def number_of_1(coverage):
+def number_of_1(coverage):  # 判断有几个1
     count = 0
     while coverage > 0:
         count += 1
