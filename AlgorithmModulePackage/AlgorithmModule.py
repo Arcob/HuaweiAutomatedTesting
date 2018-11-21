@@ -42,7 +42,7 @@ def receive_coverage(coverage):
 
 def end_current_round():
     global current_test_case
-
+    path_tree.add_test_case(current_test_case)
     current_test_case = None
 
 
