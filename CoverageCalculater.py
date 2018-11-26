@@ -42,4 +42,4 @@ def get_branch_num(coverage):
 
 
 def get_cover_percentage(coverage):  # 返回覆盖率百分比
-    return number_of_1(coverage)/(total_length if total_length != 0 else get_branch_num(coverage))
+    return number_of_1(coverage)/get_branch_num(coverage)

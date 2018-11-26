@@ -1,7 +1,8 @@
 from Classes import InterfaceRange
 from Classes import TestCase
 from Classes import PathTree
-import Mutater
+from AlgorithmModulePackage import Mutater
+from AlgorithmModulePackage import Combiner
 import Communicator
 import Logger
 
@@ -13,8 +14,10 @@ current_test_case = None  #当前用例
 
 def init():
     global path_tree
-    path_tree = PathTree()
-    print("AlgorithmModulePackage init")
+    path_tree = PathTree.PathTree()
+
+    Combiner.init()
+    Logger.log("AlgorithmModulePackage init")
 
 
 def receive_range_from_simulation_module(range):

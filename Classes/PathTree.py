@@ -1,4 +1,4 @@
-import TestCase
+from Classes import TestCase
 
 
 class PathTree:
@@ -24,7 +24,7 @@ class PathTree:
             self.test_case_list.append([test_case])
 
     def scan_for_first(self):  # 查找下一个
-        #  之后再实现
+        #  之后再实现，单个的时候先用0
         return self.path_tree[0]
 
 

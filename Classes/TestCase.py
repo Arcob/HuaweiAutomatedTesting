@@ -1,4 +1,4 @@
-import SubTestCase
+from Classes import SubTestCase
 import CoverageCalculater
 
 
