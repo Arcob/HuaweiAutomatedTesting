@@ -1,7 +1,4 @@
 class SubTestCase:
-    info = ""
-    result = True
-    value = 0
 
     total_mutate_time = 0
     effective_mutate_time = 0

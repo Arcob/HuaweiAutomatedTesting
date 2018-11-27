@@ -8,13 +8,11 @@ def init():
 
 
 def on_receive_test_request(info):
-    treated_info = 0
-    # treatedInfo = treat(info)
-    SimulationModule.sort_and_send_span(treated_info)
+    SimulationModule.sort_and_send_span(treat_test_request(info))  # 将处理过的测试请求发送给模拟模块
 
 
-def on_receive_coverage_information(info):
-    AlgorithmModule.receive_coverage(read_into_coverage(info))
+def on_receive_coverage_information(info):  # info为表示覆盖率的xml信息
+    AlgorithmModule.receive_coverage(info)
 
 
 def send_mutated_sub_test_case(testCase):  # 发送次级测试用例后等待华为那边发回下一次测试请求（另一个接口）
@@ -28,7 +26,7 @@ def listen(info):
         on_receive_test_request(info)
 
 
-def read_into_coverage(info):  # 将传来的覆盖率信息（xml）读为coverage
-    result = 0
-    return result
-
+def treat_test_request(info):
+    # 这里写解析测试请求的方法，将测试请求解析成模拟模块可读的格式后返回
+    treated_info = 0
+    return treated_info
