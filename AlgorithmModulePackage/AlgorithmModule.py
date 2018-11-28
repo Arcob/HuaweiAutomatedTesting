@@ -9,7 +9,7 @@ import Logger
 
 path_tree = None  # 储存路径的树
 interface_dictionary = {}  # 储存接口的字典结构 模拟模块发来接口编号和复杂接口代码后直接从这里面取
-current_test_case = None  #当前用例
+current_test_case = None  # 当前用例
 
 
 def init():
